@@ -1,0 +1,15 @@
+---
+virtualbox:
+  cpus: 4
+  memory: 4096
+  # set the ip adress without the last digit
+  ipaddress: 10.20.30.4
+  online_box_name: LivingDevOps/lidop.online
+  online_box_url: 
+  online_box_version: ">=1.1"
+  offline_box_name: LivingDevOps/lidop.offline
+  offline_box_url: 
+  offline_box_version: ">=1.8"
+  local_box_name: lidop.offline
+  local_box_url: ./.box/lidop.offline.virtualbox.box
+  local_box_version:

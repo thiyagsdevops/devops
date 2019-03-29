@@ -1,0 +1,16 @@
+.*/**
+.*
+**.iso
+builds
+**.tar
+
+!.gitignore
+docker-compose.yml
+**.retry
+backup.tgz
+**/rootCA.srl
+
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars

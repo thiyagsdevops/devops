@@ -1,0 +1,10 @@
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = lidop.local
+DNS.2 = {{ domain_name }}
+DNS.3 = {{ public_ipaddress }}
+DNS.4 = {{ ipaddress }}
