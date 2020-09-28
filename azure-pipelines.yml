@@ -27,3 +27,9 @@ steps:
 - script: terraform destroy -auto-approve -var access_key=$(access_key) -var secret_key=$(secret_key)  -var password=$(password) ./terraform
   displayName: 'Terraform destroy'
   condition: always()
+
+- task: SynopsysDetectTask@2
+  inputs:
+    Products: 'BD'
+    BlackDuckService: 'Black duck gsk'
+    DetectVersion: 'latest'
